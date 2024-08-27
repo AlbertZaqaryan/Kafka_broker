@@ -15,7 +15,7 @@ def consume_data_and_store_to_s3():
     
     s3_client = boto3.client(
         's3',
-        region_name=os.getenv('S3_REGION_NAM'), # VAR NAME IN YOUR .env file
+        region_name=os.getenv('S3_REGION_NAME'), # VAR NAME IN YOUR .env file
         aws_access_key_id=os.getenv('S3_ACCESS_KEY'), # VAR NAME IN YOUR .env file
         aws_secret_access_key=os.getenv('S3_SECRET_KEY') # VAR NAME IN YOUR .env file
     )
